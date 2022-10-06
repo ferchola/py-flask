@@ -5,7 +5,7 @@ from core.modules.data import *
 def index_page():
     return render_template('index.html',data=enumerate(data_bcg.query.all(),1))
 
-# add data ..
+# add data
 @app.route('/add-product',methods=["POST","GET"])
 def add_data():
     if request.method == 'POST':
