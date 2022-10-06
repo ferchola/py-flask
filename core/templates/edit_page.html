@@ -1,0 +1,15 @@
+<html>
+    {% include 'header.html' %}
+<body>
+    <font class='text text-primary' size='5'>Edit page </font>
+    <br>
+    <form method="POST" action="">
+        <input type="text" name="name" class='input-text' value='{{name}}' placeholder="Product ">
+        <br>
+        <input type='text' name="sku" class='input-text' value='{{sku}}' placeholder="SKU">
+        <br>
+        <input type='submit' class='btn btn-info' value="Add" style='height:37px;'>
+</form>
+    </form>
+</body>
+</html>

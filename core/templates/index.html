@@ -1,0 +1,37 @@
+<html>
+    <title>Simple Crud</title>
+    {% include 'header.html' %}
+</html>
+<body>
+
+<form action='/add-product' method="POST">
+
+<h3 class='text text-primary'>Add your data here ... </h1>
+<input type='text' name='name' placeholder="product" class='input-text'>
+<br>
+<input type='text' name='sku' class='input-text' placeholder="sku"><br><input type='submit' class='btn btn-info' value="Add" style='height:37px;'>
+</form>
+    <br>
+    <br>
+<table class='table'>
+    <thead>
+        <tr>
+            <th>ID </th>
+            <th>Nama </th>
+            <th>Kelas </th>
+            <th>Action </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for id,data_data in data %}
+        <tr class='info'>
+            <td>{{id}}</td>
+            <td>{{data_data.name}} </td>
+            <td>{{data_data.sku}}</td>
+            <td><a href='/edit/{{data_data.id}}'>Edit  </a><a href='/delete/{{data_data.id}}'> Delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</table>
+</body>
