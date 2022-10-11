@@ -23,11 +23,7 @@ def add_data():
 
 # delete data 
 @app.route('/delete/<int:id>')
-def delete_data(id):
-    datasis = data_bcg.query.filter_by(id=id).first() # filter by id 
-    db.session.delete(datasis)
-    db.session.commit()
-    return redirect(url_for('index_page'))
+#TODO
 
 # edit data
 @app.route('/edit/<int:id>',methods=["GET","POST"])

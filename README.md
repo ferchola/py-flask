@@ -35,9 +35,10 @@ Your app will launch at [http://localhost:5000](http://localhost:5000)
 
 Some suggested very simple tasks to complete/enhance the app, which will allow you to explore Copilot's features.
 
-**\*TODO\*\***
-
----
+- Create a new endpoint to list all products
+- Create a new endpoint to delete a product by id
+- Try to improve/simplify get_client_score_py(client) in functions.py
+- Create unit tests for functions.py with Ponicode and play a little
 
 ## Using Ponicode
 
